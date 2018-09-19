@@ -82,11 +82,10 @@ def main():
     conv_autencoder = build_model()
 
     logging.info('training')
-    model = tflearn.DNN(conv_autencoder, tensorboard_verbose=3)
-    model.fit(X, X, n_epoch=20, shuffle=True, show_metric=True,
-              batch_size=BATCH_SIZE, validation_set=0.1, snapshot_epoch=True,
-              run_id='selfie_conv_autoencoder',
-              checkpoint_path=CHECKPOINTS_PATH)
+    model = tflearn.DNN(conv_autencoder, tensorboard_verbose=3, checkpoint_path=CHECKPOINT_PATH)
+    model.fit(X, X, n_epoch=500, shuffle=True, show_metric=True,
+              batch_size=BATCH_SIZE, validation_set=0.1, snapshot_epoch=True, snapshot_step=100,
+              run_id='selfie_conv_autoencoder')
 
 
 if __name__ == '__main__':
