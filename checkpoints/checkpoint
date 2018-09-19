@@ -1,2 +1,2 @@
-model_checkpoint_path: "/home/praveen/Convolutional-Autoencoder/checkpoints/conv_autoencoder_weights-107"
-all_model_checkpoint_paths: "/home/praveen/Convolutional-Autoencoder/checkpoints/conv_autoencoder_weights-107"
+model_checkpoint_path: "/home/praveen/Convolutional-Autoencoder/checkpoints/conv_autoencoder_weights-135"
+all_model_checkpoint_paths: "/home/praveen/Convolutional-Autoencoder/checkpoints/conv_autoencoder_weights-135"
